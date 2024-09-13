@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Registros</title>
+</head>
+<body>
+
+    <header class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="#">Administrar</a></li>
+			<li><a href="#">Registrar</a></li>
+			<li><a href="#">Recetario</a></li>
+			<li><a href="#">Iniciar sesión</a></li>
+		</ul>
+	</header>
+    <div class="options">
+        <label for="addStatus">Add status</label>
+        <select name="addStatus" id="addStatus">
+            <option value="">-- select status --</option>
+            <option value="fabian">Fabian</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="box" id="box">
+            <div class="producto">
+                <span>Producto</span>
+                <span>Garcia Diego</span>
+                <span>Zenon</span>
+                <span>San Juan</span>
+            </div>
+            
+            <div class="count">
+                <input type="text" name="product" placeholder="Producto" autocomplete="off">
+                <input type="number" name="garcia" placeholder="*Solo numeros" step="1" min="0">
+                <input type="number" name="zenon" placeholder="*Solo numeros" step="1" min="0">
+                <input type="number" name="snJuan" placeholder="*Solo numeros" step="1" min="0">
+                <button class="delete">X</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="btnBox">
+        <button id="addElement" class="addElement">Añadir elemento</button>
+        <input type="submit" value="Registrar">
+    </div>
+
+
+    <script src="../scripts/record.js"></script>
+</body>
+</html>
