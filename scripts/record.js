@@ -4,14 +4,17 @@ btnAdd.addEventListener('click', function(){
 	const container = document.getElementById('box');
 	const inputs = container.querySelectorAll('input');
 	const x = inputs.length - 4;
-	// if (inputs[x].value == ""){
-	// 		alert("Primero debes agregar un producto");
-	// 	}else if (inputs[x + 1].value <= 0 && inputs[x + 2].value <= 0 && inputs[x +	 3 ].value <= 0) {
-	// 			alert("No pueden estar todos los campos vacíos")
-	// 	}else{
-	// 			addNode();
-	// 		}
-		addNode();
+	if (inputs[x].value == ""){
+			alert("Primero debes agregar un producto");
+		}else if (inputs[x + 1].value <= 0 && inputs[x + 2].value <= 0 && inputs[x +	 3 ].value <= 0) {
+				alert("No pueden estar todos los campos vacíos")
+		}else{
+			inputs[x+1].value == "" ? inputs[x+1].value = 0: undefined;
+			inputs[x+2].value == "" ? inputs[x+2].value = 0: undefined;
+			inputs[x+3].value == "" ? inputs[x+3].value = 0: undefined;
+
+			addNode();
+			}
 });
 
 function eliminate(event){
@@ -26,7 +29,8 @@ function addNode(){
 	let inN1 = document.createElement('input');
 	let inN2 = document.createElement('input');
 	let inN3 = document.createElement('input');
-	let btnCancel = document.createElement('button')
+	let btnCancel = document.createElement('button');
+	let iconCancel = document.createElement('span');
 
 	div.setAttribute('class', 'count');
 
@@ -55,7 +59,10 @@ function addNode(){
 
 	btnCancel.addEventListener('click', eliminate);
 	btnCancel.setAttribute('class', 'delete');
-	btnCancel.innerText = 'X';
+
+	iconCancel.className = 'material-symbols-rounded delete_icon';
+	iconCancel.innerText = 'delete_forever';
+	btnCancel.appendChild(iconCancel);
 
 	div.appendChild(inProduct);
 	div.appendChild(inN1);
