@@ -66,6 +66,13 @@ body{
 	transition: background-color 0.1s;
 }
 
+.material-symbols-rounded{
+	color: red;
+	font-size: 2vmax;
+}
+
+/*   Fin Menu de escritorio   */
+
 .container{
 	width: 100%;
 	height: auto;
