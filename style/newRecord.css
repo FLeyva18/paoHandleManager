@@ -1,0 +1,135 @@
+/* Tabla de registros */
+.container{
+	width: 100%;
+	max-width: 100vw;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box{
+	padding: 8px;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	background: var(--accent);
+	max-width: 100vw;
+	border-radius: 0.4em;
+}
+
+.box .producto{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+	padding: 4px;
+}
+
+.box span{
+	padding: 4px 0;
+	font-size: 1.5em;
+	background: var(--accent);
+	border-radius: 15px;
+}
+
+.count{
+	display: grid;
+	border-bottom: solid 1px grey;
+	grid-template-columns: repeat(4, 1fr) 50px;
+	gap: 8px;
+	padding: 4px;
+}
+
+.box input[type="text"], input[type="number"]{
+	padding: 8px;
+	font-size: 0.75em;
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.box input[type="text"]:focus, input[type="number"]:focus{
+	border-bottom: solid 1px var(--mainText);
+}
+
+.box input[type="number"]{
+	background: transparent;
+}
+
+.box .delete{
+	height: 40px;
+	width: 40px;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box .delete .delete_icon{
+	border-radius: 0;
+	color: #C9302C;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.btnBox{
+	display: flex;
+	justify-content: center;
+	margin-top: 8px;
+}
+
+.addElement, input[type="submit"] {
+	height: 40px;
+	width: auto;
+	background: var(--buttons);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 4px;
+	font-size: 15px;
+	font-weight: 600;
+	transform: translateX(-25%);
+}
+/* Fin tabla de registros */
+
+/* Status bar */
+.options{
+	min-height: 35px;
+	font-size: 1.2em;
+	position: relative;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+}
+
+.divStatus{
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+}
+
+.options .divStatus select{
+	height: 25px;
+	outline: none;
+	border: none;
+	background: #ece2d8;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.options .divStatus button{
+	height: 25px;
+	margin-left: 6px;
+	padding: 0 4px;
+	cursor: pointer;
+
+}
+
+/* Mobile version
+
+@media (max-width: 767px) {
+    
+} */
