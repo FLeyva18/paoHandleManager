@@ -46,15 +46,18 @@
 	background: transparent;
 	border: none;
 	outline: none;
+	background: #d8d8d857;
+	border-radius: 8px;
 }
 
 .box input[type="text"]:focus, input[type="number"]:focus{
 	border-bottom: solid 1px var(--mainText);
 }
 
-.box input[type="number"]{
-	background: transparent;
-}
+/*.box input[type="number"]{
+	background: #d8d8d857;
+	border-radius: 8px;
+}*/
 
 .box .delete{
 	height: 40px;

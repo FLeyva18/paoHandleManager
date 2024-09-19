@@ -48,14 +48,14 @@ function addNode(){
 	inN2.setAttribute('type', 'number');
 	inN2.setAttribute('name', 'zenon');
 	inN2.setAttribute('placeholder', 'Cantidad')
-	inN1.setAttribute('step', '1')
-	inN1.setAttribute('min', '0')
+	inN2.setAttribute('step', '1')
+	inN2.setAttribute('min', '0')
 
 	inN3.setAttribute('type', 'number');
 	inN3.setAttribute('name', 'snJuan');
 	inN3.setAttribute('placeholder', 'Cantidad')
-	inN1.setAttribute('step', '1')
-	inN1.setAttribute('min', '0')
+	inN3.setAttribute('step', '1')
+	inN3.setAttribute('min', '0')
 
 	btnCancel.addEventListener('click', eliminate);
 	btnCancel.setAttribute('class', 'delete');
